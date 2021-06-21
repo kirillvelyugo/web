@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags p.3 HW</title>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Онлайн резюме</h1>
+        <div>
+            <div>
+                <p>Введите ваше имя:</p>
+                <input tabindex="1" type="text" name="username" placeholder="Имя">
+            </div>
+            <div>
+                <p>Введите вашу фамилию:</p>
+                <input tabindex="2" type="text" name="usersurname" placeholder="Фамилия">
+            </div>
+            <div>
+                <p>Введите ваш возраст:</p>
+                <input tabindex="3" type="number" name="userage" placeholder="Возраст" min="18" max="65">
+            </div>
+            <div>
+                <p>Выберите свой пол:</p>
+                <select tabindex="4" name="gender">
+                    <option value="male">Мужчина</option>
+                    <option value="female">Женщина</option>
+                    <option value="unknown">Неопределен</option>
+                </select>
+            </div>
+            <div>
+                <p>Введите ваш номер телефон:</p>
+                <input tabindex="5" type="tel" name="userphone" placeholder="Телефон">
+            </div>
+        </div>
+        
+        
+        <h2>Дополнительная информация</h2>
+        <div>
+            <p>Выберите метро возле которого удобно работать:</p>
+            <div>
+                <label>
+                    <input tabindex="6" type="radio" name="matro" value="aviamotornaya">
+                    м. Авиамоторная
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input tabindex="6" type="radio" name="matro" value="ploshad_revolutcii">
+                    м. Площадь революции
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input tabindex="6" disabled type="radio" name="matro" value="ohotniy_ryad">
+                    м. Охотный ряд
+                </label>
+            </div>
+            <div>
+                <p>Прикрепите свою фотографию:</p>
+                <input tabindex="7" type="file" name="userphoto">
+            </div>
+        </div>
+
+        <h2>Почему вы должны работать у нас?</h2>
+        <div>
+            <div>
+                <p>Напишите свою характеристику и свои достоинства:</p>
+            </div>
+            <textarea tabindex="8" name="review"></textarea>
+        </div>
+        
+        <div>
+            <div>
+                <button tabindex="9" type="submit">Отправить</button>
+                <button tabindex="10" type="reset">Очистить</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
