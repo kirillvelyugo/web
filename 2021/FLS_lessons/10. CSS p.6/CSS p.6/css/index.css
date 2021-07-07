@@ -65,47 +65,49 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* LESSON
-======== */
-.firstBlock {
-    margin-bottom: 20px;
-    max-width: 500px;
-    min-width: 200px;
+========= */
+body {
+    padding: 30px;
 }
 
-.secondBlock {
-    display: block;
+.text {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 30px;
 }
 
-.trirdBlock {
-    color: black;
-    display: block;
-    margin-bottom: 20px;
+.text:first-line {
+    color: blueviolet;
 }
 
-.fourthBlock {
-    min-height: 100px;
+.text::first-letter {
+    font-size: 30px;
+    color: red;
 }
 
-.fifthBlock {
-    display: inline;
+.list {
+    
 }
 
-.sixthBlock {
+.list li {
+    font-size: 24px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.list li::before {
+    content: '‎';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     display: inline-block;
-    margin-bottom: 20px;
+    background: red;
+    margin: 0 10px 0 0;
+    transition: .4s;
+    position: relative;
+    top: 7px;
 }
 
-.seventhBlock {
-    display: inline-block;
-}
-
-.eighthBlock {
-    display: inline-block;
-    color: black;   
-}
-
-.ninethBlock {
-    height: 300px;
-    display: block;
-    padding: 100px 10px;
+.list li:hover::before {
+    background: blue;
 }
